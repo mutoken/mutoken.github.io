@@ -11,8 +11,116 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!--ナビゲーションメニュー-->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!--ヘッダー情報-->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">MUTOKEN's page</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_target">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!--リストの配置-->
+        <div class="collapse navbar-collapse" id="nav_target">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Who am I</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--コンテンツ１自己紹介-->
+    <div class="container">
+      <div class="row">
+        <h2>Who am I?</h2>
+        <hr>
+      </div>
+      <div class="row flexbox-container-vertical-center">
+        <div class="col-sm-8">
+          <h4>KENTARO MUTO</h4>
+          <p>
+            現在はプログラミングと全く関係のない仕事だが、もともと早い時期からパソコンやプログラミングには興味を持っていた。
+            <br>
+            <br>
+            中学校２年生のときに富士通のパソコンFM７NECを親に購入買ってもらう。はじめはゲームが目的。それを使ってBASICでゲームを作成するようになった。
+            <br>
+            <br>
+            その後大学を１９９５年に卒業して金融機関に就職。そこで金融派生商品のプライシングモデル及びシステム構築に従事した。S言語（S-PLUS）でモデルを構築し、それをCでシステムに落とし込むディレクションをしていた。
+            <br>
+            <br>
+            ２０１６年にテックアカデミーのRuby on Railsのコースを受講した。途中で断念してしまった。
+            <br>
+            <br>
+            ２０１８年、再びテックアカデミーのコースを復習し始めた。⇨今ここ
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <img src="Kentaro_Muto_pic.jpg" class="img-responsive">
+        </div>
+      </div>
+    </div>
+
+    <!--コンテンツ2 言語-->
+    <div class="container" id="experiences">
+      <div class="row">
+        <h2>Engineering experiences?</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h4>Basic</h4></div>
+            <div class="panel-body">８０年代、中学生・高校生のときに主にゲーム制作に使っていた。ほぼ記憶にない。ちなみにBASICの誕生は１９６４年<a href="https://gigazine.net/news/20140501-fifty-years-of-basic/">らしい</a></div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h4>SPLUS/R</h4></div>
+            <div class="panel-body">１９９５年から１９９８年ぐらいまでかなり使い込んだ。デリバティブのプライシングとリスク管理のために、金利のイールドカーブのモンテカルロシミュレーションと価格付けのアプリケーションを作成していた。おもすぎたのかハードがおそすぎたのか３万通りのシミュレーションのバッチで一晩かかっていた</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h4>Ruby on Rails</h4></div>
+            <div class="panel-body">いま学習中</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--コンテンツ2 言語 END-->
+
+    <!--コンテンツ2 ポートフォリオ START-->
+    <div class="container" id="portfolio">
+      <div class="row">
+        <h2>Portfolio?</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h4>TO COME</h4></div>
+            <div class="panel-body">TO COME</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h4>TO COME</h4></div>
+            <div class="panel-body">TO COME</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--コンテンツ2 ポートフォリオ END-->
+
+
   </body>
 </html>
